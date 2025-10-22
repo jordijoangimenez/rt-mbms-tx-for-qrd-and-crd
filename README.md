@@ -53,13 +53,13 @@ sudo ./srsran_install_configs.sh user
 
 After the installtion, you have to adjust the enb, rr, epc config files to your desired frequency, bandwith, tx gain, MNC, MCC ...
 
-or you can use our [templates](https://github.com/5G-MAG/rt-mbms-tx-for-qrd-and-crd/tree/qrd-tx/Config-Template). Download them and place them in ``/root/.config/srsran/``.
-You can still change the frequency, gain or whatever if you want to. 
+or you can use our [templates](https://github.com/5G-MAG/rt-mbms-tx-for-qrd-and-crd/tree/main/Config-Template). Download them and place them in ``/root/.config/srsran/``.
 
 Also make sure to copy the adapted sib.conf.mbsfn file to the build directory:
+
 ````
-cd rt-mbms-tx-for-qrd-and-crd/
-cp sib.conf.mbsfn build/sib.conf.mbsfn
+cd rt-mbms-tx-for-qrd-and-crd/Config-Template
+cp sib.conf.mbsfn ../build/sib.conf.mbsfn
 ````
 
 ## Running
